@@ -9,14 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid bg-primary text-white text-center p-5">
+    <div class="container-fluid bg-dark text-white text-center p-5">
         <h1>Projeto SW2</h1>
         <p>
             Elaborado por Felipe Gabriel
         </p>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
 
             <div class="col-sm-4">
@@ -35,7 +35,7 @@
                 
 
             <div class="col-sm-4">
-                <h1 class="bg-success text-secondary">Fornecedor</h1>
+                <h1 class="bg-success text-danger">Fornecedor</h1>
                 <p class="text-success">
                     Utilize essa opção para realizar o cadastro dos fornecedores dos produtos que serão vendidos online, ou edita-las.
                 </p>
@@ -45,10 +45,12 @@
 
         <div class="row">
             <div class="col-sm-6">
-                <h1>Produtos</h1>
+                <h1 class="bg-warning">Produtos</h1>
+                <p class="text-warning">Use essa opção para cadastrar os produtos que serão vendidos no site</p>
         </div>
         <div class="col-sm-6">
-            <h1>Vendas</h1>
+            <h1 class="bg-secondary">Vendas</h1>
+            <p class="text-secondary">Use essa opção para consultar as vendas realizadas pelos clientes</p>
         </div>
     </div>
 </div>
