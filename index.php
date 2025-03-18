@@ -20,14 +20,14 @@
         <div class="row">
 
             <div class="col-sm-4">
-                <a href='login.php'><h1 class="bg-primary text-warning">Administrador</h1></a>
+                <a href='administrador.php' style="text-decoration : none"><h1 class="bg-primary text-warning">Administrador</h1></a>
                 <p class="text-primary">
                     Utilize essa opção para realizar o cadastro de novos administradores, ou edita-los.
                 </p>
             </div>
 
             <div class="col-sm-4">
-                <a href='categoria.php'><h1 class="bg-danger text-white">Categorias</h1></a>
+                <a href='categoria.php' style="text-decoration : none"><h1 class="bg-danger text-white">Categorias</h1></a>
                 <p class="text-danger">
                     Utilize essa opção para realizar o cadastro das categorias do produtos que serão vendidos online, ou edita-las.
                 </p>
@@ -35,7 +35,7 @@
                 
 
             <div class="col-sm-4">
-                <a href='fornecedor.php'><h1 class="bg-success text-danger">Fornecedor</h1></a>
+                <a href='fornecedor.php'  style="text-decoration : none"><h1 class="bg-success text-danger">Fornecedor</h1></a>
                 <p class="text-success">
                     Utilize essa opção para realizar o cadastro dos fornecedores dos produtos que serão vendidos online, ou edita-las.
                 </p>
@@ -45,7 +45,7 @@
 
         <div class="row">
             <div class="col-sm-6">
-                <a href='produto.php'><h1 class="bg-warning">Produtos</h1></a>
+                <a href='produto.php'  style="text-decoration : none"><h1 class="bg-warning">Produtos</h1></a>
                 <p class="text-warning">Use essa opção para cadastrar os produtos que serão vendidos no site</p>
         </div>
         <div class="col-sm-6">
