@@ -18,7 +18,7 @@
             <div class="col-sm-8 mx-auto mt-3 border border-primary">
                 <h3 class="text-center">Preencha os dados abaixo</h3>
 
-                <form action="#">
+                <form action="administrador_cadastro.php">
 
                     <p>
                             Digite o nome do administrador<br>
