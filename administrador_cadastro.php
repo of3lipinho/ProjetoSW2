@@ -23,18 +23,25 @@
                 <?php
                     $nome = $_REQUEST['nome'];
                     $login = $_REQUEST['login'];
-                    $senha = $_REQUEST['senha'];
+                    $senha = md5( $_REQUEST['senha']);
 
                     echo "Nome do Administrador: $nome <br>
                         Login: $login <br>
                         Senha: $senha <br>";
 
                     $sql = "insert into administrador(nome, login, senha)
-                    values = (:snome, :login, :senha)";
+                    values (:nome, :login, :senha)";
 
                     include "conexao.php";
                     $result = $conexao->prepare($sql);
+                    $result->bindValue(":nome", $nome);
+                    $result->bindValue(":login", $login);
+                    $result->bindValue(":senha", $senha);
+                    $result->execute();
+
+                    echo("<p>O administrador foi cadastro com sucesso !</p>");
                 ?>
+
 
                 </div>
 
