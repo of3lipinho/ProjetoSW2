@@ -9,40 +9,35 @@
 </head>
 <body>
     
-    <div class="bg-primary text-white p-3 text-center">
-        <h1>Cadastro de Administradores</h1>
+    <div class="bg-danger text-white p-3 text-center">
+        <h1>Cadastro de Categorias</h1>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 mx-auto mt-3 border border-primary">
+            <div class="col-sm-8 mx-auto mt-3 border border-danger">
                 <h3 class="text-center p-3">Confirmação de Cadastro</h3>
 
                 <div>
 
                 <?php
-                    $nome = $_REQUEST['nome'];
-                    $login = $_REQUEST['login'];
-                    $senha = md5( $_REQUEST['senha']);
+                    $categoria = $_REQUEST['categoria'];
+                  
+                    echo "Nome da Categoria: $categoria <br>";
 
-                    echo "Nome do Administrador: $nome <br>
-                        Login: $login <br>
-                        Senha: $senha <br>";
-
-                    $sql = "insert into administrador(nome, login, senha)
-                    values (:nome, :login, :senha)";
+                    $sql = "insert into categoria(categoria)
+                    values (:categoria)";
 
                     include "conexao.php";
                     $result = $conexao->prepare($sql);
-                    $result->bindValue(":nome", $nome);
-                    $result->bindValue(":login", $login);
-                    $result->bindValue(":senha", $senha);
+                    $result->bindValue(":categoria", $categoria);
                     $result->execute();
 
-                    echo("<p>O administrador foi cadastro com sucesso !</p>");
+                    echo("<p>A categoria foi cadastrada com sucesso !</p>");
                 ?>
-                    <a href="index.php" class="btn btn-secondary mb-3 ">Voltar para pagina inicial</a>
-                    <a href="administrador.php" class="btn btn-info mb-3 ">Voltar</a>
+                  <a href="index.php" class="btn btn-secondary mb-3 ">Voltar para pagina inicial</a>
+                  <a href="categoria.php" class="btn btn-info mb-3 ">Voltar</a>
+
 
 
                 </div>

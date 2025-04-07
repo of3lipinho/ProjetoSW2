@@ -44,13 +44,17 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <a href='produto.php'  style="text-decoration : none"><h1 class="bg-warning">Produtos</h1></a>
                 <p class="text-warning">Use essa opção para cadastrar os produtos que serão vendidos no site</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-4">
             <h1 class="bg-secondary">Vendas</h1>
             <p class="text-secondary">Use essa opção para consultar as vendas realizadas pelos clientes</p>
+        </div>
+        <div class="col-sm-4">
+        <a href='formapagamento.php'  style="text-decoration : none"><h1 class="bg-danger">Forma de Pagamento</h1></a>
+            <p class="text-secondary">Use essa opção definir a sua forma de pagamento</p>
         </div>
     </div>
 </div>

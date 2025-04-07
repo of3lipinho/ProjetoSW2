@@ -18,7 +18,7 @@
             <div class="col-sm-8 mx-auto mt-3 border border-danger">
                 <h3 class="text-center">Preencha os dados abaixo</h3>
 
-                <form action="#">
+                <form action="categoria_cadastro.php">
 
                     <p>
                             Digite a Categoria<br>

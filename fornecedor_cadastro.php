@@ -16,24 +16,30 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8 mx-auto mt-3 border border-success">
-                <h3 class="text-center">Preencha os dados abaixo</h3>
+                <h3 class="text-center p-3">Confirmação de Cadastro</h3>
 
-                <form action="fornecedor_cadastro.php">
+                <div>
 
-                    <p>
-                            Digite a Fornecedor<br>
-                            <input type="text" name="fornecedor" class="form-control" />
-                    </p>
-                     
+                <?php
+                    $fornecedor = $_REQUEST['fornecedor'];
+                  
+                    echo "Nome do Fornecedor: $fornecedor <br>";
 
-                       <p>
-                            <input type="submit" value="Cadastrar" class="btn btn-success" />
-                            <input type="reset" value="Limpar" class="btn btn-warning"/> 
-                            <a href="index.php" class="btn btn-secondary">Voltar</a>
-                       </p>
+                    $sql = "insert into fornecedor(fornecedor)
+                    values (:fornecedor)";
 
+                    include "conexao.php";
+                    $result = $conexao->prepare($sql);
+                    $result->bindValue(":fornecedor", $fornecedor);
+                    $result->execute();
 
-                </form>
+                    echo("<p>O fornecedor foi cadastrado com sucesso !</p>");
+                ?>
+                    <a href="index.php" class="btn btn-secondary mb-3 ">Voltar para pagina inicial</a>
+                    <a href="fornecedor.php" class="btn btn-info mb-3 ">Voltar</a>
+
+                </div>
+
             </div>
         </div>
     </div>
