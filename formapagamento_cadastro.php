@@ -9,13 +9,13 @@
 </head>
 <body>
     
-    <div class="bg-danger text-white p-3 text-center">
+    <div class="bg-dark text-white p-3 text-center">
         <h1>Cadastro de Forma de Pagamento</h1>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 mx-auto mt-3 border border-danger">
+            <div class="col-sm-8 mx-auto mt-3 border border-dark">
                 <h3 class="text-center p-3">Confirmação de Cadastro</h3>
 
                 <div>

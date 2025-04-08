@@ -11,7 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -20,6 +19,11 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `projetosw`
 --
+CREATE DATABASE IF NOT EXISTS `projetosw` 
+  CHARACTER SET utf8mb4 
+  COLLATE utf8mb4_0900_ai_ci;
+
+USE `projetosw`;
 
 -- --------------------------------------------------------
 
@@ -41,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `administrador` (
 --
 
 INSERT INTO `administrador` (`codigo`, `nome`, `login`, `senha`) VALUES
-(5, 'felipinho', 'felipe', '');
+(1, 'felipinho', 'felipe', '');
 
 -- --------------------------------------------------------
 
@@ -61,18 +65,15 @@ CREATE TABLE IF NOT EXISTS `categoria` (
 --
 
 INSERT INTO `categoria` (`codigo`, `categoria`) VALUES
-(21, 'Celular'),
-(20, 'Comida'),
-(19, 'Limpeza'),
-(22, 'Cartão de Crédito'),
-(23, 'Cartão de Debito'),
-(24, 'Cheque'),
-(25, 'Cartão de Crédito'),
-(26, 'Cartão'),
-(27, 'Cartão de Debito'),
-(28, 'cartao credito'),
-(29, 'Computadores Gamer'),
-(30, 'Guílherme');
+(1, 'Alimentos'),
+(2, 'Celular'),
+(3, 'Limpeza'),
+(4, 'Moveis'),
+(5, 'Eletrodomesticos'),
+(6, 'Roupa'),
+(7, 'Sapato'),
+(8, 'Utensilios'),
+(9, 'Jogos');
 
 -- --------------------------------------------------------
 
@@ -94,8 +95,9 @@ CREATE TABLE IF NOT EXISTS `formapagamento` (
 INSERT INTO `formapagamento` (`codigo`, `formapagamento`) VALUES
 (1, 'Pix'),
 (2, 'Dinheiro'),
-(3, 'Cartao'),
-(6, 'Débito');
+(3, 'Cartão de Crédito'),
+(4, 'Cartão de Débito'),
+(5, 'Cheque');
 
 -- --------------------------------------------------------
 
@@ -115,9 +117,16 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
 --
 
 INSERT INTO `fornecedor` (`codigo`, `fornecedor`) VALUES
-(7, 'Samsung'),
-(6, 'Maza'),
-(5, 'Pierim');
+(1, 'Pierim'),
+(2, 'Samsung'),
+(3, 'Maza'),
+(4, 'Mirtes'),
+(5, 'Magazine Luiza'),
+(6, 'Costa Brava'),
+(7, 'MSPORT'),
+(8, 'Chromozinho'),
+(9, 'Brinqueduque');
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

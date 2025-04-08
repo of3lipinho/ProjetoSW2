@@ -53,7 +53,7 @@
             <p class="text-secondary">Use essa opção para consultar as vendas realizadas pelos clientes</p>
         </div>
         <div class="col-sm-4">
-        <a href='formapagamento.php'  style="text-decoration : none"><h1 class="bg-danger">Forma de Pagamento</h1></a>
+        <a href='formapagamento.php'  style="text-decoration : none"><h1 class="bg-dark text-light">Forma de Pagamento</h1></a>
             <p class="text-secondary">Use essa opção definir a sua forma de pagamento</p>
         </div>
     </div>
