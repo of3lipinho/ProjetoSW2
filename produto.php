@@ -18,28 +18,28 @@
             <div class="col-sm-8 mx-auto mt-3 border border-warning">
                 <h3 class="text-center">Preencha os dados abaixo</h3>
 
-                <form action="#">
+                <form action="produto_cadastro.php">
 
                     <p>
-                            Digite o nome do produto<br>
-                            <input type="text" name="nome" class="form-control" />
-                    </p>
-                    <p>
-                            Digite a descrição do produto<br>
+                            Digite a Descrição do Produto<br>
                             <input type="text" name="descricao" class="form-control" />
                     </p>
-                     <p>
-                        Digite a categoria<br>
-                        <input type="text" name="categoria" class="form-control"/>
-                     </p>
-                     <p>
-                    Digite o preço<br>
-                        <input type="text" name="preco" class="form-control" />
-                       </p>
-                       <p>
-                    Digite o Fornecedor<br>
-                        <input type="text" name="fornecedor" class="form-control" />
-                       </p>
+                    <p>
+                            Digite o Preço de Custo do Produto<br>
+                            <input type="text" name="precocusto" class="form-control" />
+                    </p>
+                    <p>
+                            Digite o Preço de Venda do Produto<br>
+                            <input type="text" name="precovenda" class="form-control" />
+                    </p>
+                    <p>
+                            Digite o Codigo da Categoria<br>
+                            <input type="text" name="codcategoria" class="form-control" />
+                    </p>
+                    <p>
+                            Digite o Codigo do Fornecedor<br>
+                            <input type="text" name="codfornecedor" class="form-control" />
+                    </p>                   
 
                        <p>
                             <input type="submit" value="Cadastrar" class="btn btn-success" />
