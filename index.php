@@ -36,6 +36,8 @@
                 <p class="text-danger">
                     Utilize essa opção para realizar o cadastro das categorias do produtos que serão vendidos online, ou edita-las.
                 </p>
+                <a href='categoria.php' style="text-decoration : none"><p>Cadastro</p></a>
+                <a href='categoria_pesquisa.php' style="text-decoration : none"><p>Pesquisa</p></a>
             </div>
                 
 
@@ -44,6 +46,8 @@
                 <p class="text-success">
                     Utilize essa opção para realizar o cadastro dos fornecedores dos produtos que serão vendidos online, ou edita-las.
                 </p>
+                <a href='fornecedor.php' style="text-decoration : none"><p>Cadastro</p></a>
+                <a href='fornecedor_pesquisa.php' style="text-decoration : none"><p>Pesquisa</p></a>
             </div>
 
         </div>
