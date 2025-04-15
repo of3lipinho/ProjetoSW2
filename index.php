@@ -21,6 +21,11 @@
 
             <div class="col-sm-4">
                 <a href='administrador.php' style="text-decoration : none"><h1 class="bg-primary text-warning">Administrador</h1></a>
+                <div class="col-sm-2">
+                <a href='administrador.php' style="text-decoration : none"><p>Cadastro</p></a>
+                <a href='administrador_pesquisa.php' style="text-decoration : none"><p>Pesquisa</p></a>
+
+                </div>
                 <p class="text-primary">
                     Utilize essa opção para realizar o cadastro de novos administradores, ou edita-los.
                 </p>
