@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 27-Maio-2025 às 11:45
+-- Tempo de geração: 27-Maio-2025 às 11:47
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `projetosw`
+-- Banco de dados: `projetosw2`
 --
-CREATE DATABASE IF NOT EXISTS `projetosw` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `projetosw`;
+CREATE DATABASE IF NOT EXISTS `projetosw2` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `projetosw2`;
 
 -- --------------------------------------------------------
 
@@ -36,14 +36,14 @@ CREATE TABLE IF NOT EXISTS `administrador` (
   `login` varchar(200) NOT NULL,
   `senha` varchar(200) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `administrador`
 --
 
 INSERT INTO `administrador` (`codigo`, `nome`, `login`, `senha`) VALUES
-(1, 'felipe', 'felipe', '81dc9bdb52d04dc20036dbd8313ed055');
+(2, 'Vinicius Silva Guerra', 'vinicius', 'e10adc3949ba59abbe56e057f20f883e');
 
 -- --------------------------------------------------------
 
@@ -54,24 +54,18 @@ INSERT INTO `administrador` (`codigo`, `nome`, `login`, `senha`) VALUES
 DROP TABLE IF EXISTS `categoria`;
 CREATE TABLE IF NOT EXISTS `categoria` (
   `codigo` int NOT NULL AUTO_INCREMENT,
-  `categoria` varchar(100) NOT NULL,
+  `nome` varchar(100) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `categoria`
 --
 
-INSERT INTO `categoria` (`codigo`, `categoria`) VALUES
-(1, 'Alimentos'),
-(2, 'Celular'),
-(3, 'Limpeza'),
-(4, 'Moveis'),
-(5, 'Eletrodomesticos'),
-(6, 'Roupa'),
-(7, 'Sapato'),
-(8, 'Utensilios'),
-(9, 'Jogos');
+INSERT INTO `categoria` (`codigo`, `nome`) VALUES
+(1, 'Comida'),
+(2, 'Gilbert'),
+(3, 'Luke');
 
 -- --------------------------------------------------------
 
@@ -81,21 +75,18 @@ INSERT INTO `categoria` (`codigo`, `categoria`) VALUES
 
 DROP TABLE IF EXISTS `formapagamento`;
 CREATE TABLE IF NOT EXISTS `formapagamento` (
-  `codigo` int NOT NULL AUTO_INCREMENT,
-  `formapagamento` varchar(100) NOT NULL,
-  PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `código` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(200) NOT NULL,
+  PRIMARY KEY (`código`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `formapagamento`
 --
 
-INSERT INTO `formapagamento` (`codigo`, `formapagamento`) VALUES
-(1, 'Pix'),
-(2, 'Dinheiro'),
-(3, 'Cartão de Crédito'),
-(4, 'Cartão de Débito'),
-(5, 'Cheque');
+INSERT INTO `formapagamento` (`código`, `nome`) VALUES
+(1, 'pix'),
+(4, 'Luke');
 
 -- --------------------------------------------------------
 
@@ -106,24 +97,21 @@ INSERT INTO `formapagamento` (`codigo`, `formapagamento`) VALUES
 DROP TABLE IF EXISTS `fornecedor`;
 CREATE TABLE IF NOT EXISTS `fornecedor` (
   `codigo` int NOT NULL AUTO_INCREMENT,
-  `fornecedor` varchar(100) NOT NULL,
+  `nome` varchar(100) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `fornecedor`
 --
 
-INSERT INTO `fornecedor` (`codigo`, `fornecedor`) VALUES
-(1, 'Pierim'),
-(2, 'Samsung'),
-(3, 'Maza'),
-(4, 'Mirtes'),
-(5, 'Magazine Luiza'),
-(6, 'Costa Brava'),
-(7, 'MSPORT'),
-(8, 'Chromozinho'),
-(9, 'Brinqueduque');
+INSERT INTO `fornecedor` (`codigo`, `nome`) VALUES
+(1, 'Gilbert'),
+(2, 'Gilbert'),
+(3, 'Gilbert'),
+(4, 'Gilbert'),
+(5, 'Luke'),
+(6, 'Bloberta');
 
 -- --------------------------------------------------------
 
@@ -143,7 +131,16 @@ CREATE TABLE IF NOT EXISTS `produto` (
   `imagem2` varchar(200) NOT NULL,
   `imagem3` varchar(200) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`codigo`, `descricao`, `precocusto`, `precovenda`, `codcategoria`, `codfornecedor`, `imagem1`, `imagem2`, `imagem3`) VALUES
+(1, 'Tablet', 3000.00, 3500.00, 1, 1, '', '', ''),
+(2, 'Tablet', 3000.00, 3500.00, 1, 1, '', '', ''),
+(3, 'Celular', 2000.00, 3500.00, 1, 2, '', '', '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
