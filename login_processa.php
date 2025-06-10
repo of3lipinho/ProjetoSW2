@@ -1,26 +1,34 @@
 <?php
 
-include "conexao.php";
+    include "conexao.php";
 
-$sql = "select * from administrador
-        where login = :login and senha = :senha";
+    $sql = "select * from administrador
+            where login = :login and senha = :senha";
 
-$login = $_REQUEST["login"];
-$senha = $_REQUEST["senha"];
+    $login = $_REQUEST["login"];
+    $senha = $_REQUEST["senha"];
 
-$result = $conexao->prepare($sql);
-$result->bindValue(":login", $login);
-$result->bindValue(":senha", md5($senha));
-$result->execute();
+    $result = $conexao->prepare($sql);
+    $result ->bindValue(":login",$login);
+    $result ->bindValue(":senha", md5 ($senha));
+    $result->execute();
 
-if($linha = $result->fetch(PDO::FETCH_ASSOC)){
-    echo "Login realizado com sucesso";
-}
-else{
-    session_start();
-    $_SESSION["erro"] = "Login e/ou Senha estão incorretos";
+    if ($linha = $result ->fetch(PDO::FETCH_ASSOC) )
+    {
+        //echo "Login realizado com sucesso !";
+        session_start();
+        $_SESSION["nome"] = $linha["nome"];
 
-    header("location: login.php");
+        header ("location: index.php");
+    }
+    else
+    {
+        session_start();
+        $_SESSION["erro"] ="Login e Senha incorretos !";
+
+        header("location: login.php");
     
-}
-?>
+    }
+
+
+    ?>
