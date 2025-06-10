@@ -22,8 +22,8 @@
 <body>
     
 
-<div class="bg-primary text-white p-3 text-center">
-        <h1>Pesquisa de Administradores</h1>
+<div class="bg-info text-white p-3 text-center">
+        <h1>Pesquisa de Formas de Pagamentos</h1>
     </div>
 
     <div class="container">
@@ -32,16 +32,15 @@
 
             <table class="table">
                 <tr>
-                  <th>Codigo</th> 
-                  <th>Nome</th> 
-                  <th>Login</th>    
+                  <th>Código</th> 
+                  <th>Nome</th>  
                 </tr>
 
         <?php
 
 include "conexao.php";
 
-$sql= "select*from administrador";
+$sql= "select*from formapagamento";
 
 $result=$conexao->prepare($sql);
 $result->execute();
@@ -51,9 +50,8 @@ while($linha=$result->fetch(PDO::FETCH_ASSOC))
         ?>
                 <tr>
 
-                <td><?=$linha["codigo"]?></td>
+                <td><?=$linha["código"]?></td>
                 <td><?=$linha["nome"]?></td>
-                <td><?=$linha["login"]?></td>
                 </tr>
          <?php
  }
@@ -62,7 +60,7 @@ while($linha=$result->fetch(PDO::FETCH_ASSOC))
             </table>
 
             <p>
-                <a href="index.php" class="btn btn-primary">Voltar</a>
+                <a href="index.php" class="btn btn-info">Voltar</a>
 </p>
 
             </div>

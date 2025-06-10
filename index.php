@@ -22,6 +22,7 @@
 </head>
 <body>
 
+
     <?php include "menu.php" ?>
 
 
@@ -31,87 +32,87 @@
         Elaborado por Felipe Gabriel
 </p>
 </div>
+=======
 
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Administrador -->
-            <div class="col-sm-4">
-                <a href="administrador.php" style="text-decoration: none;">
-                    <h1 class="bg-primary text-warning">Administrador</h1>
-                </a>
-                <a href="administrador_pesquisa.php" style="text-decoration: none;">
-                    <p class="btn btn-primary">Pesquisa</p>
-                </a>
-                <p class="text-primary">
-                    Utilize essa opção para realizar o cadastro de novos administradores, ou editá-los.
-                </p>
-            </div>
+   
+<div class="container mt-5">
+    <div class="row">
 
-            <!-- Categorias -->
-            <div class="col-sm-4">
-                <a href="categoria.php" style="text-decoration: none;">
-                    <h1 class="bg-danger text-white">Categorias</h1>
-                </a>
-                <a href="categoria_pesquisa.php" style="text-decoration: none;">
-                    <p class="btn btn-danger">Pesquisa</p>
-                </a>
-                <p class="text-danger">
-                    Utilize essa opção para realizar o cadastro das categorias dos produtos que serão vendidos online, ou editá-las.
-                </p>
-            </div>
+    <div class="col-sm-4">
+        <h1 class="bg-primary">Admistrador</h1>
+        <p class="text-primary">
+    Utilize esta opção para realizar o cadastro 
+    de novos administradores, ou edita-los.
+        </p>
 
-            <!-- Fornecedor -->
-            <div class="col-sm-4">
-                <a href="fornecedor.php" style="text-decoration: none;">
-                    <h1 class="bg-success text-danger">Fornecedor</h1>
-                </a>
-                <a href="fornecedor_pesquisa.php" style="text-decoration: none;">
-                    <p class="btn btn-success">Pesquisa</p>
-                </a>
-                <p class="text-success">
-                    Utilize essa opção para realizar o cadastro dos fornecedores dos produtos que serão vendidos online, ou editá-los.
-                </p>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <!-- Produtos -->
-            <div class="col-sm-4">
-                <a href="produto.php" style="text-decoration: none;">
-                    <h1 class="bg-warning">Produtos</h1>
-                </a>
-                <p class="text-warning">
-                    Use essa opção para cadastrar os produtos que serão vendidos no site.
-                </p>
-            </div>
-
-            <!-- Vendas -->
-            <div class="col-sm-4">
-                <h1 class="bg-secondary">Vendas</h1>
-                <p class="text-secondary">
-                    Use essa opção para consultar as vendas realizadas pelos clientes.
-                </p>
-            </div>
-
-            <!-- Forma de Pagamento -->
-            <div class="col-sm-4">
-                <a href="formapagamento.php" style="text-decoration: none;">
-                    <h1 class="bg-dark text-light">Forma de Pagamento</h1>
-                </a>
-                <p class="text-secondary">
-                    Use essa opção para definir a sua forma de pagamento.
-                </p>
-            </div>
-            <!-- Login -->
-            <div class="col-sm-4">
-                <a href="login.php" style="text-decoration: none;">
-                    <h1 class="bg-success text-light">Login</h1>
-                </a>
-                <p class="text-secondary">
-                    Use para acessar o sistema.
-                </p>
-            </div>
-        </div>
+        <p>
+            <a href="administrador.php" class="btn btn-primary">Cadastro</a>
+            <a href="administrador_pesquisa.php" class="btn btn-primary">Pesquisa</a>
+</p>
     </div>
+
+    <div class="col-sm-4">
+    <h1 class="bg-danger">Categorias</h1>
+    <p class="text-danger">
+        Utilize esta opção para cadastrar as Categorias
+        dos produtos que serão vendidos on-line.
+    </p>
+    <p>
+            <a href="categoria.php" class="btn btn-danger">Cadastro</a>
+            <a href="categoria_pesquisa.php" class="btn btn-danger">Pesquisa</a>
+</p>
+</div>
+
+<div class="col-sm-4">
+<h1 class="bg-success">Forcenador</h1>
+<p class="text-success">
+    Utilize esta opção para cadastrar os fornecedores
+    dos produtos que serão vendidos on-line.
+</p>
+<p>
+            <a href="fornecedor.php" class="btn btn-success">Cadastro</a>
+            <a href="fornecedor_pesquisa.php" class="btn btn-success">Pesquisa</a>
+</p>
+</div>
+</div>
+
+
+    <div class="row">
+    <div class="col-sm-6">
+    <h1 class="bg-warning">Produtos</h1>
+    <p class="text-warning">
+        Utilize está opção para cadastrar os produtos que 
+        serão vendidos no site.
+    </P>
+
+    <p>
+            <a href="produto.php" class="btn btn-warning">Cadastro</a>
+            <a href="produto_pesquisa.php" class="btn btn-warning">Pesquisa</a>
+</p>
+</div>
+
+<div class="col-sm-6">
+    <h1 class="bg-secondary">Vendas</h1>
+    <p class="text-secondary"> 
+        Utilize está para visualizar as Vendas
+        realizadas pelos clientes.
+    </p>
+    <p>
+            <a href="#" class="btn btn-secondary">Clique Aqui</a>
+</p>
+</div>
+
+<div class="col-sm-6">
+    <h1 class="bg-info">Formas de Pagamento</h1>
+    <p class="text-info"> 
+        Utilize está para visualizar as formas de pagamento.
+    </p>
+    <p>
+            <a href="formapagamento.php" class="btn btn-info">Cadastro</a>
+            <a href="formapagamento_pesquisa.php" class="btn btn-info">Pesquisa</a>
+</p>
+</div>
+</div>
+</div>
 </body>
 </html>
