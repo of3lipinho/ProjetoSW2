@@ -1,5 +1,7 @@
 
-<nav class="navbar navbar-expand-sm text-white" style="background-color : #960000">
+
+<nav class="navbar navbar-expand-sm text-white" style="background-color :rgb(56, 68, 203)">
+
     <div class="container-fluid">
 
         <a href="index.php" class="nav-brand">
