@@ -22,16 +22,19 @@
 </head>
 <body>
 
+
     <?php include "menu.php" ?>
 
 
    <div class="container-fluid bg-dark text-white text-center p-5"> 
     <h1>Projeto SW2</h1>
     <p>
-        Elaborado por Vinícius Guerra
+        Elaborado por Felipe Gabriel
 </p>
 </div>
+=======
 
+   
 <div class="container mt-5">
     <div class="row">
 

@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-sm text-white" style="background-color : #960000">
     <div class="container-fluid">
 
@@ -22,7 +23,11 @@
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Outras opções</a>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="administrador.php">Administrador</a></li>
+
+    <li><a class="dropdown-item" href="categoria.php">Categoria</a></li>
+
     <li><a class="dropdown-item" href="#categoria.php">Categoria</a></li>
+
     <li><a class="dropdown-item" href="fornecedor.php">Fornecedores</a></li>
     <li><a class="dropdown-item" href="formapagamento.php   ">Formas de pagamento</a></li>
   </ul>
@@ -39,4 +44,8 @@
     </div>
 
     </div>
+
 </nav>
+
+</nav>
+
