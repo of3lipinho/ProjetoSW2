@@ -26,8 +26,6 @@
 
             <li><a class="dropdown-item" href="categoria.php">Categoria</a></li>
 
-            <li><a class="dropdown-item" href="#categoria.php">Categoria</a></li>
-
             <li><a class="dropdown-item" href="fornecedor.php">Fornecedores</a></li>
             <li><a class="dropdown-item" href="formapagamento.php   ">Formas de pagamento</a></li>
           </ul>

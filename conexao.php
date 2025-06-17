@@ -1,7 +1,7 @@
 <?php
 
     $servidor = "localhost";
-    $bancodados = "projetosw2";
+    $bancodados = "projetosw";
     $usuario = "root";
     $senha = "";
 
